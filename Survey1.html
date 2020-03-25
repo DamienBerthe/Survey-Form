@@ -2,32 +2,56 @@
 <html id="main">
     <head>
         <link href="Survey1.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1 id="title">Survey Form</h1>
-        <p id="description">lol</p>
+        <h1 id="title">Your Order</h1>
+        <p id="description">Welcome to Flavor Town</p>
         <form id="survey-form">
             <label for="name">
-                <input type="text" id="name" placeholder="name">
+                Name<br>
+                <input type="text" id="name" placeholder="Enter your name" size="50">
             </label>
+            <br><br>
             <label for ="email">
-                <input type="email" id="email" placeholder="email">
+                Email<br>
+                <input type="email" id="email" placeholder="Enter your email" size="50">
             </label>
-            <label for ="number">
-                <input type="number" id="number" placeholder="number">
-            </label>
-            <select id="dropdown">
-                <option value="k">k</option>
-                <option value="e">e</option>
+            <br><br>
+            <label for="Menu">Menu</label><br>
+            <select id="dropdown" >
+                <option value="" disabled selected>Select an option</option>
+                <option value="Sandwich">Burger</option>
+                <option value="Fries">Burger + Fries</option>
+                <option value="Soda">Burger + Fries + Soda</option>
             </select>
-            <label for="k"><input id="k" type="radio" name="kek"> k </label>
-            <label for="e"><input id="e" type="radio" name="kek"> e </label>
-            <label for="K"><input type="checkbox" name="Kek"> K </label>
-            <label for="e"><input type="checkbox" name="Kek"> e </label>
-            <label for="k"><input type="checkbox" name="Kek"> k </label>
-            <label for="kek">kek</label>
-            <textarea id="textarea">zzzzzzzzzzzzzzzzzzzzz</textarea>
-            <button type="submit">Submit</button>
+            <br><br>
+            <label for ="number">
+                Quantity<br>
+                <input type="number" id="number" placeholder="Enter a number" size="50" min="1">
+            </label>
+            <br><br>
+            <label for="Order Size">Order Size</label><br>
+            <label for="Small"><input id="Small" type="radio" name="size"> Small </label>
+            <label for="Medium"><input id="Medium" type="radio" name="size"> Medium </label>
+            <label for="Large"><input id="Large" type="radio" name="size"> Large </label>
+            <br><br>
+            <Label for="Burger Composition">Burger Composition</Label><br>
+            <label for="Cheese"><input type="checkbox" name="compo" checked> Cheese </label><br>
+            <label for="Salad"><input type="checkbox" name="compo" checked> Salad </label><br>
+            <label for="Tomatoes"><input type="checkbox" name="compo" checked> Tomatoes </label><br>
+            <label for="Onions"><input type="checkbox" name="compo" checked> Onions </label><br>
+            <label for="Pickles"><input type="checkbox" name="compo" checked> Pickles </label><br>
+            <label for="Ketchup"><input type="checkbox" name="compo" checked> Ketchup </label><br>
+            <label for="Mustard"><input type="checkbox" name="compo" checked> Mustard </label><br>
+            <label for="Bacon"><input type="checkbox" name="compo" > Bacon </label><br>
+            <label for="extracheese"><input type="checkbox" name="compo"> Extra Cheese </label><br>
+            <br>
+            <label for="Additional Details">Additional Details</label>
+            <br>
+            <textarea id="textarea" placeholder="Add a note (extra napkins, extra sauce...)"></textarea>
+            <br><br>
+            <button id="submit" type="submit">Submit</button>
         </form>
     </body>
 </html>

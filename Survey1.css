@@ -1,6 +1,6 @@
 #textarea{
-    height:200px;
-    width:200px;
+    height:100px;
+    width:375px;
 }
 #main:before{
     content: "";
@@ -9,21 +9,63 @@
     background-size:contain;
     height:100%;
     background-position: center;
-    opacity: 0.7;
+    opacity: 0.5;
     left: 0;
     right: 0;
     position: absolute;
     z-index: -1;  
+}
   
-  
-  
-  /*
-  
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg');
-    background-repeat:no-repeat;
-    background-size:contain;
-    height:100%;
-    background-position: center;
+#submit{
+    background-color: #ce2522;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:vollkorn, 'sans serif';
+    width: 380px;
+    border-radius:5px;
+    margin-bottom:50px;
+}
 
-    */
+#submit:hover{
+  opacity:0.9;
+}
+
+#main, form {
+  font-family:vollkorn, 'sans serif';
+  font-size:20px;
+}
+
+h1, #description{
+  text-align:center;
+}
+
+form{
+  margin:auto;
+  width:380px;
+}
+
+input[type=number]{
+  width: 380px;
+}
+
+select{
+  border-radius: 5px;
+  border:none;
+  padding:10px;
+  width:400px;
+}
+
+input{
+  border-radius:5px;
+  border:none;
+  padding:10px;
+}
+
+textarea{
+  border-radius:5px;
 }
