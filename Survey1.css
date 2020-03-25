@@ -1,6 +1,6 @@
 #textarea{
     height:100px;
-    width:375px;
+    width:391px;
 }
 #main:before{
     content: "";
@@ -12,8 +12,8 @@
     opacity: 0.5;
     left: 0;
     right: 0;
-    position: absolute;
-    z-index: -1;  
+    position: fixed;
+    z-index: -1;
 }
   
 #submit{
@@ -26,9 +26,10 @@
     display: inline-block;
     font-size: 16px;
     font-family:vollkorn, 'sans serif';
-    width: 380px;
+    width: 400px;
     border-radius:5px;
     margin-bottom:50px;
+    cursor: pointer;
 }
 
 #submit:hover{
@@ -68,4 +69,5 @@ input{
 
 textarea{
   border-radius:5px;
+  padding:7.7px 0 0 7.7px;
 }
