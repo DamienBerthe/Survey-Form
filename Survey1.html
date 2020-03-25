@@ -8,14 +8,14 @@
         <h1 id="title">Your Order</h1>
         <p id="description">Welcome to Flavor Town</p>
         <form id="survey-form">
-            <label for="name">
+            <label for="name" id="name-label">
                 Name<br>
-                <input type="text" id="name" placeholder="Enter your name" size="50">
+                <input type="text" id="name" placeholder="Enter your name" size="50" required>
             </label>
             <br><br>
-            <label for ="email">
+            <label for ="email" id="email-label">
                 Email<br>
-                <input type="email" id="email" placeholder="Enter your email" size="50">
+                <input type="email" id="email" placeholder="Enter your email" size="50" required>
             </label>
             <br><br>
             <label for="Menu">Menu</label><br>
@@ -26,26 +26,26 @@
                 <option value="Soda">Burger + Fries + Soda</option>
             </select>
             <br><br>
-            <label for ="number">
+            <label for ="number" id="number-label">
                 Quantity<br>
-                <input type="number" id="number" placeholder="Enter a number" size="50" min="1">
+                <input type="number" id="number" placeholder="Enter a number" size="50" min="1" max="2000">
             </label>
             <br><br>
             <label for="Order Size">Order Size</label><br>
-            <label for="Small"><input id="Small" type="radio" name="size"> Small </label>
-            <label for="Medium"><input id="Medium" type="radio" name="size"> Medium </label>
-            <label for="Large"><input id="Large" type="radio" name="size"> Large </label>
+            <label for="Small"><input id="Small" type="radio" name="size" value="Small"> Small </label>
+            <label for="Medium"><input id="Medium" type="radio" name="size" value="Medium"> Medium </label>
+            <label for="Large"><input id="Large" type="radio" name="size" value="Large"> Large </label>
             <br><br>
             <Label for="Burger Composition">Burger Composition</Label><br>
-            <label for="Cheese"><input type="checkbox" name="compo" checked> Cheese </label><br>
-            <label for="Salad"><input type="checkbox" name="compo" checked> Salad </label><br>
-            <label for="Tomatoes"><input type="checkbox" name="compo" checked> Tomatoes </label><br>
-            <label for="Onions"><input type="checkbox" name="compo" checked> Onions </label><br>
-            <label for="Pickles"><input type="checkbox" name="compo" checked> Pickles </label><br>
-            <label for="Ketchup"><input type="checkbox" name="compo" checked> Ketchup </label><br>
-            <label for="Mustard"><input type="checkbox" name="compo" checked> Mustard </label><br>
-            <label for="Bacon"><input type="checkbox" name="compo" > Bacon </label><br>
-            <label for="extracheese"><input type="checkbox" name="compo"> Extra Cheese </label><br>
+            <label for="Cheese"><input type="checkbox" name="compo" value="Cheese" checked> Cheese </label><br>
+            <label for="Salad"><input type="checkbox" name="compo" value="Salad" checked> Salad </label><br>
+            <label for="Tomatoes"><input type="checkbox" name="compo" value="Tomatoes" checked> Tomatoes </label><br>
+            <label for="Onions"><input type="checkbox" name="compo" value="Onions" checked> Onions </label><br>
+            <label for="Pickles"><input type="checkbox" name="compo" value="Pickles" checked> Pickles </label><br>
+            <label for="Ketchup"><input type="checkbox" name="compo" value="Ketchup" checked> Ketchup </label><br>
+            <label for="Mustard"><input type="checkbox" name="compo" value="Mustard" checked> Mustard </label><br>
+            <label for="Bacon"><input type="checkbox" name="compo" value="Bacon" > Bacon </label><br>
+            <label for="extracheese"><input type="checkbox" name="compo" value="Extra Cheese"> Extra Cheese </label><br>
             <br>
             <label for="Additional Details">Additional Details</label>
             <br>
