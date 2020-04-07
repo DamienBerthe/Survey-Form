@@ -3,6 +3,7 @@
     <head>
         <link href="Survey1.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <h1 id="title">Your Order</h1>
@@ -15,7 +16,7 @@
             <input type="email" id="email" placeholder="Enter your email" size=50 required>
             
             <label for="Menu" class="title">Menu</label><br>
-            <select id="dropdown" >
+            <select id="dropdown" required>
                 <option value="" disabled selected>Select an option</option>
                 <option value="Sandwich">Burger</option>
                 <option value="Fries">Burger + Fries</option>
@@ -23,10 +24,10 @@
             </select>
 
             <label for ="number" id="number-label" class="title">Quantity</label><br>
-            <input type="number" id="number" placeholder="Enter a number" size="50" min="1" max="2000">
+            <input type="number" id="number" placeholder="Enter a number" size="50" min="1" max="2000" required>
 
             <label for="Order Size" class="title">Order Size</label><br>
-            <input id="Small" type="radio" name="size" value="Small">
+            <input id="Small" type="radio" name="size" value="Small" required>
             <label for="Small"> Small</label><br>
             <input id="Medium" type="radio" name="size" value="Medium">
             <label for="Medium"> Medium</label><br>
@@ -43,7 +44,7 @@
             <label for="Mustard"><input type="checkbox" name="compo" value="Mustard" checked> Mustard </label><br>
             <label for="Bacon"><input type="checkbox" name="compo" value="Bacon" > Bacon </label><br>
             <label for="extracheese"><input type="checkbox" name="compo" value="Extra Cheese"> Extra Cheese </label><br>
-            <br>
+
             <label for="Additional Details" class="title">Additional Details</label>
             <br>
             <textarea id="textarea" placeholder="Add a note (extra napkins, extra sauce...)"></textarea>
