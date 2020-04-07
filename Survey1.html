@@ -8,35 +8,32 @@
         <h1 id="title">Your Order</h1>
         <p id="description">Up-n-Atom Burger</p>
         <form id="survey-form">
-            <label for="name" id="name-label">
-                Name<br>
-                <input type="text" id="name" placeholder="Enter your name" size="50" required>
-            </label>
-            <br><br>
-            <label for ="email" id="email-label">
-                Email<br>
-                <input type="email" id="email" placeholder="Enter your email" size="50" required>
-            </label>
-            <br><br>
-            <label for="Menu">Menu</label><br>
+            <label for="name" id="name-label" class="title">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name" size="50" required>
+            
+            <label for ="email" id="email-label" class="title">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email" size=50 required>
+            
+            <label for="Menu" class="title">Menu</label><br>
             <select id="dropdown" >
                 <option value="" disabled selected>Select an option</option>
                 <option value="Sandwich">Burger</option>
                 <option value="Fries">Burger + Fries</option>
                 <option value="Soda">Burger + Fries + Soda</option>
             </select>
-            <br><br>
-            <label for ="number" id="number-label">
-                Quantity<br>
-                <input type="number" id="number" placeholder="Enter a number" size="50" min="1" max="2000">
-            </label>
-            <br><br>
-            <label for="Order Size">Order Size</label><br>
-            <label for="Small"><input id="Small" type="radio" name="size" value="Small"> Small </label>
-            <label for="Medium"><input id="Medium" type="radio" name="size" value="Medium"> Medium </label>
-            <label for="Large"><input id="Large" type="radio" name="size" value="Large"> Large </label>
-            <br><br>
-            <Label for="Burger Composition">Burger Composition</Label><br>
+
+            <label for ="number" id="number-label" class="title">Quantity</label><br>
+            <input type="number" id="number" placeholder="Enter a number" size="50" min="1" max="2000">
+
+            <label for="Order Size" class="title">Order Size</label><br>
+            <input id="Small" type="radio" name="size" value="Small">
+            <label for="Small"> Small</label><br>
+            <input id="Medium" type="radio" name="size" value="Medium">
+            <label for="Medium"> Medium</label><br>
+            <input id="Large" type="radio" name="size" value="Large">
+            <label for="Large"> Large</label><br>
+
+            <Label for="Burger Composition" class="title">Burger Composition</Label><br>
             <label for="Cheese"><input type="checkbox" name="compo" value="Cheese" checked> Cheese </label><br>
             <label for="Salad"><input type="checkbox" name="compo" value="Salad" checked> Salad </label><br>
             <label for="Tomatoes"><input type="checkbox" name="compo" value="Tomatoes" checked> Tomatoes </label><br>
@@ -47,10 +44,10 @@
             <label for="Bacon"><input type="checkbox" name="compo" value="Bacon" > Bacon </label><br>
             <label for="extracheese"><input type="checkbox" name="compo" value="Extra Cheese"> Extra Cheese </label><br>
             <br>
-            <label for="Additional Details">Additional Details</label>
+            <label for="Additional Details" class="title">Additional Details</label>
             <br>
             <textarea id="textarea" placeholder="Add a note (extra napkins, extra sauce...)"></textarea>
-            <br><br>
+            <br>
             <button id="submit" type="submit">Submit</button>
         </form>
     </body>
